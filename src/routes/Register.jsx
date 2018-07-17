@@ -41,13 +41,13 @@ export default class Register extends React.Component {
   }
 
   render() {
-    const { username, email, password } = this.state;
     return (
       <Grid container justify="center" alignItems="center">
         <Grid item>
           <Card>
             <CardContent>
               <FormControl fullwidth>
+                Create Account
                 <TextField
                   label="username"
                   placeholder="e.g. doug123"
@@ -67,7 +67,12 @@ export default class Register extends React.Component {
                 <Button variant="contained" color="primary">
                   Login
                 </Button>
-                <div>or</div>
+                <div>
+                  or
+                </div>
+                <Button variant="contained" color="link">
+                  Create Account
+                </Button>
               </FormControl>
             </CardContent>
           </Card>

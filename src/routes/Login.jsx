@@ -5,6 +5,7 @@ import FormControl from '@material-ui/core/FormControl';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Grid from '@material-ui/core/Grid';
+import Link from 'react-router-dom';
 
 const styles = {
   root: {
@@ -34,20 +35,25 @@ export default class Register extends React.Component {
   componentDidMount() {
   }
 
+  // onSubmit() {
+  //
+  // }
+
   handleChange(e) {
     this.setState({
       [e.target.name]: e.target.value,
     });
   }
 
+
   render() {
-    const { username, email, password } = this.state;
     return (
       <Grid container justify="center" alignItems="center">
         <Grid item>
           <Card>
             <CardContent>
               <FormControl fullwidth>
+                Login
                 <TextField
                   label="username"
                   placeholder="e.g. doug123"
@@ -67,7 +73,12 @@ export default class Register extends React.Component {
                 <Button variant="contained" color="primary">
                   Login
                 </Button>
-                <div>or</div>
+                <div>
+                  or
+                </div>
+                <Button variant="contained" color="default">
+                  Create Account
+                </Button>
               </FormControl>
             </CardContent>
           </Card>

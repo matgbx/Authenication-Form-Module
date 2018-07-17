@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
+import { Link } from 'react-router-dom';
 
 const styles = {
   root: {
@@ -19,7 +20,9 @@ const Welcome = () => (
   <Grid container justify="center" alignContent="center">
     <Grid item>
       <Button type="submit" className="enter">
-        enter
+        <Link to="/home">
+          enter
+        </Link>
       </Button>
     </Grid>
   </Grid>
